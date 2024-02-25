@@ -1,0 +1,117 @@
+.container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.left-content {
+  flex: 1;
+  padding: 20px;
+  margin-left: 3rem;
+  margin-top: 5rem;
+  top: 0;
+  width: calc(300px + 3rem);
+}
+
+.right-content {
+  flex: 2;
+  padding: 20px;
+  top: 0;
+  border-left: 1px solid #ccc;
+}
+
+.left-content img {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.h2-left {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.repositories-text {
+  font-size: 1rem;
+  margin-bottom: 10px;
+  font-family: "Roboto", sans-serif;
+  color: white;
+}
+.repository-item {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.repository-item:last-child {
+  margin-bottom: 0;
+}
+.repository-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.repository-owner {
+  color: #666;
+  font-size: 1rem;
+}
+
+.repository-description {
+  color: #333;
+  font-size: 1rem;
+}
+.repositories-h2 {
+  margin-top: 3rem;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+.repository-button {
+  display: inline-block;
+  margin-bottom: 0.5rem;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.5rem;
+  transition: background-color 0.3s ease;
+}
+
+.repository-button:hover {
+  color: #666;
+  cursor: pointer;
+}
+
+.repository-name {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.repository-owner {
+  color: white;
+  font-size: 1rem;
+}
+
+.repository-description {
+  color: white;
+  font-size: 1rem;
+}
+.date-filter input[type="date"] {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  outline: none;
+}
+
+.date-filter input[type="date"]::before {
+  margin-right: 8px;
+}
+
+.date-filter input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(1);
+  margin-left: 4px;
+  cursor: pointer;
+}
