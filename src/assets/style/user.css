@@ -115,3 +115,15 @@
   margin-left: 4px;
   cursor: pointer;
 }
+.right-content-chart {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  padding-left: 10rem;
+  margin-left: 10rem;
+  margin-top: 10rem;
+  border-left: 1px solid #ccc;
+}
+
+.pie-chart-fixed {
+  color: white;
+}

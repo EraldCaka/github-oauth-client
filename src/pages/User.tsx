@@ -46,8 +46,8 @@ const User = () => {
         {userData && (
           <div>
             <img src={userData.avatar_url} alt="User avatar" />
-            <h2 className="h2-left">Username: {userData.name}</h2>
-            <h2 className="h2-left">Name: {userData.login}</h2>
+            <h2 className="h2-left">{userData.name}</h2>
+            <h2 className="h2-left">{userData.login}</h2>
           </div>
         )}
       </div>

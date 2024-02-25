@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
 import APIClient from "../lib/apiClient";
 import CommitRes from "../models/Commit";
+import { PieChart } from "@mui/x-charts";
 import "../assets/style/user.css";
 
 const Commit = () => {
@@ -57,8 +58,6 @@ const Commit = () => {
     return date.toLocaleString();
   };
 
-  console.log("Commit count by date:", commitCountByDate);
-
   return (
     <div className="container">
       <div className="left-content">
@@ -88,8 +87,40 @@ const Commit = () => {
           ))}
         </div>
       </div>
+      <div className="right-content-chart">
+        <PieChart
+          className="pie-chart-fixed"
+          series={[
+            {
+              data: Object.entries(commitCountByDate).map(
+                ([date, count], index) => ({
+                  id: index,
+                  value: count,
+                  label: `${date} - ${count} commits`,
+                })
+              ),
+            },
+          ]}
+          width={1000}
+          height={500}
+          style={{ color: "white" }}
+        />
+      </div>
     </div>
   );
 };
 
 export default Commit;
+{
+  /* <div className="commit-count">
+          <h2 className="chart-h2">Commits by Date</h2>
+          {Object.keys(commitCountByDate).map((date) => (
+            <div key={date} className="commit-count-item">
+              <p className="commit-count-date">{date}</p>
+              <p className="commit-count-number">
+                {commitCountByDate[date]} commits
+              </p>
+            </div>
+          ))}
+        </div> */
+}
