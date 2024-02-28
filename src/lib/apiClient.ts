@@ -3,7 +3,7 @@ import axios, { AxiosError } from "axios";
 export interface APIClientError extends AxiosError {}
 
 const axiosInstance = axios.create({
-  baseURL: "http://localhost:5000",
+  baseURL: "http://localhost:5555",
   withCredentials: true,
 });
 

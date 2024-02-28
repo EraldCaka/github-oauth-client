@@ -103,7 +103,9 @@ const Commit = () => {
           ]}
           width={1000}
           height={500}
-          style={{ color: "white" }}
+          labelStyle={{
+            color: "white",
+          }}
         />
       </div>
     </div>

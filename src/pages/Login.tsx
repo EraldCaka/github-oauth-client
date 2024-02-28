@@ -21,7 +21,7 @@ function Login() {
 
   return (
     <>
-      <h1>Github App</h1>
+      <h1 style={{ color: "white" }}>Github App</h1>
       <button onClick={loginWithGithub}>Login with Github</button>
     </>
   );

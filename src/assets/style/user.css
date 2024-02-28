@@ -30,6 +30,7 @@
   margin-bottom: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: bold;
+  color: white;
 }
 
 .repositories-text {
@@ -67,6 +68,7 @@
   font-size: 2rem;
   padding-bottom: 2rem;
   border-bottom: 1px solid #ccc;
+  color: white;
 }
 .repository-button {
   display: inline-block;
@@ -125,5 +127,8 @@
 }
 
 .pie-chart-fixed {
+  color: white;
+}
+.repository-sha {
   color: white;
 }
