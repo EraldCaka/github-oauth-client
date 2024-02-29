@@ -113,16 +113,15 @@ const Commit = () => {
 };
 
 export default Commit;
-{
-  /* <div className="commit-count">
-          <h2 className="chart-h2">Commits by Date</h2>
-          {Object.keys(commitCountByDate).map((date) => (
-            <div key={date} className="commit-count-item">
-              <p className="commit-count-date">{date}</p>
-              <p className="commit-count-number">
-                {commitCountByDate[date]} commits
-              </p>
-            </div>
-          ))}
-        </div> */
-}
+
+/*
+
+const apiClient = new APIClient<RepositoryDB>(
+          `/oauth/db/repoName/${repoName}`
+        );
+        const repoData = await apiClient.get();
+        const apiClientCommit = new APIClient<CommitDB[]>(`
+        /oauth/db/commits/${repoData.id}`);
+        const commitData = await apiClientCommit.get();
+
+*/
